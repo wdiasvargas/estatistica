@@ -1,1 +1,1 @@
-# estatistica
+# Estatistica Dedutiva
