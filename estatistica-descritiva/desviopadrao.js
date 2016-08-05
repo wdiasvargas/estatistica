@@ -5,5 +5,5 @@ function desviopadrao(array) {
   return Math.sqrt(variancia(array))
 }
 module.exports = desviopadrao;
-var k = [1,2,3,4];
-console.log(desviopadrao(k));
+// var k = [1,2,3,4];
+// console.log(desviopadrao(k));

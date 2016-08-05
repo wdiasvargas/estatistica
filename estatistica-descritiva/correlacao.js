@@ -1,8 +1,9 @@
 //correlacao
-var variancia = require('./variancia');
-var sigma = require('./sigma');
+"use strict";
+var covariancia = require('./covariancia');
+var desviopadrao = require('./desviopadrao');
 function correlacao(arrayX,arrayY) {
-  return sigma(variancia(arrayX)*variancia(arrayY))/Math.sqrt(variancia(arrayX)*variancia(arrayY))
+  return covariancia(arrayX,arrayY)/desviopadrao(arrayX)*desviopadrao(arrayY)
 }
 module.exports = correlacao;
 var k = [1,2,3,4];
