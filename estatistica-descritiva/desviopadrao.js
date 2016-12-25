@@ -1,4 +1,7 @@
 //desviopadrao
+/*
+* created by williamdias
+* */
 "use strict";
 var variancia = require('./variancia');
 function desviopadrao(array) {
