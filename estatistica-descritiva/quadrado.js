@@ -1,7 +1,6 @@
+//quadrado
+/*
+ * created by williamdias
+ * */
 'use strict';
-function quadrado (array) {
-  return array.map(function(a,b){
-    return Math.pow(a,2)
-  })
-}
-module.exports = quadrado;
+export default (array) => array.map((a,b) => Math.pow(a, 2));

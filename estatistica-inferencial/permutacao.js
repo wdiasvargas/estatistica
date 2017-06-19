@@ -1,7 +1,7 @@
+//permutacao
+/*
+ * created by williamdias
+ * */
 'use strict';
-var fatorial = require('./fatorial');
-function permutacao (n,p) {
-  return fatorial(n)/fatorial(p);
-}
-module.exports = permutacao;
-//console.log(permutacao(3,2));
+import fatorial from './fatorial';
+export default (n,p) => (n) => (p) =>  fatorial(n) / fatorial(p);

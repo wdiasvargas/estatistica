@@ -1,5 +1,6 @@
+//bernoulli
+/*
+ * created by williamdias
+ * */
 'use strict';
-function bernoulli (x,p){
-    return Math.pow(p,x)*Math.pow((1-p),(1-x))
-  }
-module.exports = bernoulli;
+export default (x, p) => Math.pow(p,x) * Math.pow((1-p),(1-x));

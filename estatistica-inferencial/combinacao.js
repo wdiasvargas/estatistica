@@ -1,6 +1,8 @@
+//combinacao
+/*
+ * created by williamdias
+ * */
 'use strict';
-var fatorial = require('./fatorial');
-function combinacao(n,p) {
-  return fatorial(n)/(fatorial(p)*fatorial((n-p)))
-}
-module.exports = combinacao;
+import fatorial from './fatorial';
+export default (n,p) => fatorial(n) / (fatorial(p) * fatorial( (n-p)))
+

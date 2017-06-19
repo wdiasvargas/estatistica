@@ -1,6 +1,6 @@
+//geometrica
+/*
+ * created by williamdias
+ * */
 'use strict';
-function geometrica (x,p){
-  var q = 1-p;
-    return p * (Math.pow(q,x-1));
-  }
-module.exports = geometrica;
+export default (x,p) => p * (Math.pow((1-p),(x-1)));

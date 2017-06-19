@@ -1,7 +1,10 @@
+//poisson
+/*
+ * created by williamdias
+ * */
 'use strict';
-var fatorial = require('./fatorial.js');
-const e = 2.71828;
- function poisson(k,lambda,t) {
-  return (Math.pow(e,(-lambda*t))*Math.pow((lambda*t),k))/fatorial(k)
-}
-module.exports = poisson;
+
+import fatorial from './fatorial';
+import E from './E';
+export default (k,lambda,t) => (Math.pow(E,(-lambda * t)) * Math.pow((lambda * t),k)) / fatorial(k);
+

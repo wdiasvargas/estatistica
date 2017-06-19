@@ -1,8 +1,9 @@
+//variancia
+/*
+ * created by williamdias
+ * */
 'use strict';
-var sigma = require('./sigma');
-var quadrado = require('./quadrado');
+import somatorio from './somatorio';
+import quadrado from './quadrado';
 
-function variancia (array) {
-  return ((sigma(quadrado(array)) - (Math.pow(sigma(array),2))/(array.length))/(array.length-1));
- }
-module.exports = variancia;
+export default (array) => ((somatorio(quadrado(array)) - (Math.pow(somatorio(array),2)) / (array.length))/(array.length-1));

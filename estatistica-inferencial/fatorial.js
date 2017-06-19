@@ -1,9 +1,8 @@
+//fatorial
+/*
+ * created by williamdias
+ * */
 'use strict';
-function fatorial (n){
-    if(n == 0)
-      return 1;
-    else {
-      return  n * fatorial(n-1);
-      }
-  }
-module.exports = fatorial;
+import fatorial from './fatorial';
+export default (n) => (n == 0) ? 1 : n * fatorial(n-1);
+
